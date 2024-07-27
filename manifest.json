@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name" : "oldRedditRedirect",
+    "version" : "1.0",
+
+    "description" : "Redirects to old.reddit.com when you try to access reddit.com",
+    "icons" : {
+        "48" : "icons/icon-48.png"
+    },
+
+    "content_scripts" : [
+        {
+            "matches" : ["*://www.reddit.com/*", "*://reddit.com/*"],
+            "js" : ["content.js"]
+        }
+    ]
+
+}
